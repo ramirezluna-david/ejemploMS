@@ -10,4 +10,9 @@ import com.ejemploMS.ejemploMS.model.Mascota;
 @Repository
 public class MascotaRepository {
     List<Mascota> mascotas = new ArrayList<>();
+
+    public Mascota create(Mascota nuevaMascota) {
+        mascotas.add(nuevaMascota);
+        return nuevaMascota;
+    }
 }

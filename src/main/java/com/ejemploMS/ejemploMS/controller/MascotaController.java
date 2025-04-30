@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("api/mascotas")
 public class MascotaController {
+
     @GetMapping
     public String algo() {
         return "ahora sí";

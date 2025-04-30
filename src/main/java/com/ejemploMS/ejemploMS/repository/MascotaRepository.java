@@ -15,4 +15,8 @@ public class MascotaRepository {
         mascotas.add(nuevaMascota);
         return nuevaMascota;
     }
+
+    public List<Mascota> readAll() {
+        return this.mascotas;
+    }
 }

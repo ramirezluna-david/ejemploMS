@@ -1,5 +1,7 @@
 package com.ejemploMS.ejemploMS.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,5 +16,9 @@ public class MascotaService {
     public Mascota guardarMascota(Mascota mascota) {
         System.out.println("Aquí se filtra la mascota");
         return mascotaRepository.create(mascota);
+    }
+
+    public List<Mascota> listarTodas() {
+        return mascotaRepository.readAll();
     }
 }
